@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorBackgroundFloating" />
+            <corners android:radius="?attr/cornerRadius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_bg" />
+        </shape>
+    </item>
+    <item
+        android:gravity="bottom|center|start"
+        android:height="28dp"
+        android:width="28dp"
+        android:bottom="-28dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:height="8dp"
+            android:width="8dp"
+            android:viewportWidth="8.0"
+            android:viewportHeight="8.0">
+            <group
+                android:name="rotationGroup"
+                android:pivotX="4.0"
+                android:pivotY="4.0"
+                android:rotation="0.0">
+                <path
+                    android:fillColor="@color/color_bg"
+                    android:pathData="M8,0H0v8C0,3.6,3.6,0,8,0z" />
+            </group>
+        </vector>
+    </item>
+    <item
+        android:gravity="bottom|center|end"
+        android:height="28dp"
+        android:width="28dp"
+        android:bottom="-28dp">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:height="8dp"
+            android:width="8dp"
+            android:viewportWidth="8.0"
+            android:viewportHeight="8.0">
+            <group
+                android:name="rotationGroup"
+                android:pivotX="4.0"
+                android:pivotY="4.0"
+                android:rotation="90.0">
+                <path
+                    android:fillColor="@color/color_bg"
+                    android:pathData="M8,0H0v8C0,3.6,3.6,0,8,0z" />
+            </group>
+        </vector>
+    </item>
+</layer-list>
